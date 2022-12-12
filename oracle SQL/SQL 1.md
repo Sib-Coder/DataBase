@@ -1,30 +1,30 @@
 Задания:```
-1. найти все записи, у которых  LAST_NAME  заканчивается буквой ‘a’
+1. найти все записи, у которых  LAST_NAME  заканчивается буквой ‘a’ <br />
 ```SELECT last_name from employees Where last_name  Like '%a' ;```
 2. найти все записи, в которых  FIRST_NAME  содержит букву ‘l’.
 ```SELECT first_name from employees where first_name  Like '%l%' ;```
 
 
-3. найти все записи, в которых supplier_id состоит из 3 цифр и начинается с ‘10’ и FIRST_NAME начинается на «D» (сравните с «d»)
+3. найти все записи, в которых supplier_id состоит из 3 цифр и начинается с ‘10’ и FIRST_NAME начинается на «D» (сравните с «d») <br />
 ```SELECT first_name, employee_id from employees where first_name  Like 'D%' and employee_id Like '10_' ;```
 
 
 
-Примеры на почти все запросы:
+Примеры на почти все запросы:<br />
 ```SELECT last_name from employees ;```
-
+<br />
 ```SELECT salary from employees WHERE salary >10000 ORDER BY salary ASC;```
-
+<br />
 ```SELECT salary from employees WHERE salary >10000 AND salary<=14000 ORDER BY salary ASC;```
-
+<br />
 ```SELECT last_name From employees WHERE last_name Like 'D%' ;```
-
+<br />
 ```SELECT last_name From employees WHERE last_name Like 'D_ll%' ;```
-
+<br />
 ```SELECT last_name From employees WHERE last_name Like 'D%!%' ESCAPE '!';```
-
+<br />
 ```SELECT * From employees WHERE last_name not in ('Grant' ,'Baer') ;```
-
+<br />
 ```SELECT * From employees WHERE last_name in ('Grant' ,'Baer') ;```
 
 
