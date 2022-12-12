@@ -1,5 +1,5 @@
 Задания:```
-1. найти все записи, у которых  LAST_NAME  заканчивается буквой ‘a’
+1. найти все записи, у которых  LAST_NAME  заканчивается буквой ‘a’ < /br>
 ```SELECT last_name from employees Where last_name  Like '%a' ;```
 2. найти все записи, в которых  FIRST_NAME  содержит букву ‘l’.
 ```SELECT first_name from employees where first_name  Like '%l%' ;```
