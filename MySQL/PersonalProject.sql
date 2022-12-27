@@ -58,3 +58,7 @@ create table task_for_emp
 
 create index emp_id
     on task_for_emp (emp_id);
+
+
+
+alter table projects add text_colour varchar(100) null;
