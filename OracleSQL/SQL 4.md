@@ -14,10 +14,10 @@
 ```SELECT first_name , last_name, salary from employees INNER JOIN departments USING(department_id) INNER JOIN locations USING(location_id) where city ='London';```
 
 Напишите запрос в SQL для отображения идентификатора сотрудника, названия должности, количества отработанных дней для всех этих заданий в отделе 80.<br />
-```SELEct employee_id, job_title, (end_date - start_date) from employees inner JOIN job_history using(employee_id) left outer join jobs on job_history.job_id =jobs.job_id WHERE job_history.department_id =80;```
+```SELECT employee_id, job_title, (end_date - start_date) from employees inner JOIN job_history using(employee_id) left outer join jobs on job_history.job_id =jobs.job_id WHERE job_history.department_id =80;```
 
 Напишите запрос в SQL для отображения названия отдела, полного имени (имя и фамилия) менеджера и их города.<br />
-```SELEct department_name, first_name, last_name, city from departments left OUTER join locations using(location_id) Left outer JOIN employees on departments.manager_id = employees.employee_id;```
+```SELECT department_name, first_name, last_name, city from departments left OUTER join locations using(location_id) Left outer JOIN employees on departments.manager_id = employees.employee_id;```
 
 Напишите запрос в SQL для отображения названия страны, города и номера тех отделов, где работают по крайней мере 2 сотрудника.<br />
 ```SELECT department_id, country_name, city FROM departments NATURAL JOIN locations NATURAL JOIN countries LEFT OUTER JOIN employees USING(department_id) GROUP BY department_id, country_name, city HAVING COUNT(employee_id) > 2;```

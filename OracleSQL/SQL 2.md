@@ -13,17 +13,17 @@
 ```SELECT round(sqrt(8899),2) from dual;```
 <br />
 Задание 5. Вывести фамилию с длиной 5 символов и комиссионные для всех служащих с зарплатой менее 1440. Таблица s_emp.<br />
-```SELEct last_name, commission_pct FROM employees WHERE salary>= 1440 and LENGTH(last_name)=5 ;```
+```SELECT last_name, commission_pct FROM employees WHERE salary>= 1440 and LENGTH(last_name)=5 ;```
 <br />
 Примеры запросов на некоторые  функции:<br />
-```SELEct ascii(last_name) from employees;```
+```SELECT ascii(last_name) from employees;```
 <br />
-```SELEct CHR (49)  from dual;```
+```SELECT CHR (49)  from dual;```
 <br />
-```SELEct LENGTH(last_name)  from employees;```
+```SELECT LENGTH(last_name)  from employees;```
 <br />
-```SELEct NLS_LOWER(last_name)  from employees;```
+```SELECT NLS_LOWER(last_name)  from employees;```
 <br />
-```SELEct NLS_UPPER(last_name)  from employees;```
+```SELECT NLS_UPPER(last_name)  from employees;```
 
 
